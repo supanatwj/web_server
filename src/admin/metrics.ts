@@ -6,7 +6,7 @@ export async function handlerMetrics(_:Request, res:Response) {
     const htmlRes = `
         <html>
             <h1>Welcome, Chirpy Admin</h1>
-            <p>Chirpy has been visited ${config.fileserverHit} times!</p>
+            <p>Chirpy has been visited ${config.api.fileserverHit} times!</p>
         </html>`;
 
     res.send(htmlRes); 
